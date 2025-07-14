@@ -24,7 +24,6 @@ html, body {
   height: 55px;
   border-bottom: 1px solid #2c2c2c;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-
 }
 
 .app {
@@ -41,7 +40,6 @@ html, body {
 
 .sidebar-controls {
   background: #181818;
-  /* height: 100%; */
   width: 55px;
   border-right: 1px solid #2c2c2c;
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
