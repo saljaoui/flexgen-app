@@ -64,6 +64,28 @@ html, body {
   height: 100%;
 }
 
+.sidebar-controls button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+
+}
+
+.sidebar-controls-footer {
+  border-top: 1px solid #2c2c2c;
+  padding-top: 5px;
+}
+
+.sidebar-controls button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
 .sidebar-controls {
   background: #181818;
   width: 55px;
@@ -71,13 +93,14 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
   gap: 3px;
   color: #fff;
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
 }
 
-.sidebar-controls button {
+.sidebar-controls-headr button {
   background: transparent;
   border: none;
   color: #fff;
@@ -88,22 +111,30 @@ html, body {
   transition: all 0.3s ease;
 }
 
-.sidebar-controls button:hover {
+.sidebar-controls-headr button:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.sidebar-controls button svg {
+.sidebar-controls-headr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  /* height: 40px; */
+  /* border-bottom: 1px solid #2c2c2c; */
+}
+
+.sidebar-controls-headr button svg {
   fill: #999;
   transition: fill 0.3s ease;
 }
 
-.sidebar-controls button:hover svg {
-  fill: #fff; /* brighter on hover */
+.sidebar-controls-headr button:hover svg {
+  fill: #fff;
 }
 
-.sidebar-controls.active button svg {
-  fill: #fff; /* white icon when active */
-}
 
 .logo {
   display: flex;
@@ -133,3 +164,4 @@ html, body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 }
+
