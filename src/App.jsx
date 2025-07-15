@@ -7,6 +7,9 @@ function App() {
     <Topbar />
     <div className="content-main">
       <SidebarControls />
+      <div className="content">
+
+      </div>
       
     </div>
   </div>
