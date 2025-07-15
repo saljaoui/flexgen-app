@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function SidebarContentList() {
     const layouts = [
@@ -94,11 +94,7 @@ function SidebarContentList() {
             onClick={() => handleClick(layout.id)}
           >
             <div className='layout-icon'>
-              {/* You can use different icons or SVGs per layout if you want */}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270" width="40" height="40">
-                <rect width="100%" height="100%" fill="#ccc" rx="10" />
-                <path d="M10 10h250v250H10z" stroke="#000" strokeWidth="10" fill="none" />
-              </svg>
+                <div dangerouslySetInnerHTML={{ __html: layout.svg }} />
             </div>
             <div className='layout-info'>
               <div className='layout-name'>{layout.name}</div>
