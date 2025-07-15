@@ -1,5 +1,6 @@
 import SidebarControls from './components/SidebarControls.jsx'
 import Topbar from './components/Topbar.jsx'
+import SidebarContentList from './components/SidebarContentList.jsx'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
     <Topbar />
     <div className="content-main">
       <SidebarControls />
+      <SidebarContentList />
       <div className="content">
 
       </div>
