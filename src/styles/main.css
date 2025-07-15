@@ -69,6 +69,7 @@ html, body {
   border-radius: 8px;
   background-color: #181818;
   width: 100%;
+  /* background: url('../assets/gradient.png') center no-repeat; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 }
