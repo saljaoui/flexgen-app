@@ -1,6 +1,5 @@
-import { useState } from 'react';
 
-function SidebarContentList() {
+function SidebarContentList({ selectedLayout, onLayoutChange }) {
     const layouts = [
   {
     id: 'pancake',
@@ -30,7 +29,7 @@ function SidebarContentList() {
     </svg>`
   },
   {
-    id: 'HTML5-2',
+    id: 'html5-2',
     name: 'HTML5 - 2',
     desc: 'Header, sidebar, content, footer',
     svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
@@ -39,7 +38,7 @@ function SidebarContentList() {
     </svg>`
   },
   {
-    id: '12 Column System',
+    id: '12-Column-System',
     name: '12 Column System',
     desc: 'Header, sidebar, content, footer',
     svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
@@ -73,28 +72,57 @@ function SidebarContentList() {
       <path fill="none" d="M270 0v270H0V0z"></path>
       <path d="M57 10a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM122 10a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H83a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM187 10a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM252 10a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM57 75a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V83a8 8 0 0 1 8-8zM122 75a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H83a8 8 0 0 1-8-8V83a8 8 0 0 1 8-8zM187 75a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8V83a8 8 0 0 1 8-8zM252 75a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8V83a8 8 0 0 1 8-8zM57 140a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM122 140a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H83a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM187 140a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM252 140a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM57 205a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM122 205a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H83a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM187 205a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM252 205a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8z" clip-path="url(#grid4x4_svg__b)"></path>
     </svg>`
-  }
+  },
+  {
+  id: 'two-column-header',
+  name: 'Two Column + Header',
+  desc: 'Header, left sidebar, and main content',
+  svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
+    <rect></rect>
+    <path d="M252 10a8 8 0 0 1 8 8v30a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM78 58a8 8 0 0 1 8 8v186a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V66a8 8 0 0 1 8-8zM252 58a8 8 0 0 1 8 8v186a8 8 0 0 1-8 8H98a8 8 0 0 1-8-8V66a8 8 0 0 1 8-8z"></path>
+  </svg>`
+},
+{
+  id: 'three-column',
+  name: 'Three Columns',
+  desc: 'Sidebar, content, extra panel',
+  svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
+    <rect></rect>
+    <path d="M18 10h66v250H18zM102 10h66v250h-66zM186 10h66v250h-66z"></path>
+  </svg>`
+},
+{
+  id: 'header-two-cols',
+  name: 'Header + Two Columns',
+  desc: 'Header and two side-by-side sections',
+  svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
+    <rect></rect>
+    <path d="M18 10h234v40H18zM18 66h111v194H18zM135 66h117v194H135z"></path>
+  </svg>`
+},
+{
+  id: 'footer',
+  name: 'Footer Only',
+  desc: 'Main content and footer',
+  svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
+    <rect></rect>
+    <path d="M18 10h234v200H18zM18 222h234v38H18z"></path>
+  </svg>`
+}
 ];
 
- const [selectedLayout, setSelectedLayout] = useState('pancake');
-
- const handleClick = (layoutId) => {
-    setSelectedLayout(layoutId);
-    console.log('Selected layout:', layoutId);
-  };
-
   return (
-  <div className='sidebar-content'>
+    <div className='sidebar-content'>
       <h2 className='title'>LAYOUTS</h2>
       <div className='sidebar-content-list'>
         {layouts.map((layout) => (
           <div
             key={layout.id}
             className={`layout-item ${selectedLayout === layout.id ? 'active' : ''}`}
-            onClick={() => handleClick(layout.id)}
+            onClick={() => onLayoutChange(layout.id)}
           >
             <div className='layout-icon'>
-                <div dangerouslySetInnerHTML={{ __html: layout.svg }} />
+              <div dangerouslySetInnerHTML={{ __html: layout.svg }} />
             </div>
             <div className='layout-info'>
               <div className='layout-name'>{layout.name}</div>

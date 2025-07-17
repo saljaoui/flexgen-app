@@ -288,3 +288,37 @@ html, body {
 .sidebar-content::-webkit-scrollbar-track {
   background-color: #181818;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.item {
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #000;
+  color: #e0e0e0;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
