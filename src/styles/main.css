@@ -314,11 +314,13 @@ html, body {
 .container {
   height: 100%;
   width: 100%;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
 }
 
-
-
-
+.container.fade-out {
+  opacity: 0;
+}
 
 
 
