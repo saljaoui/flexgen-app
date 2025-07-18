@@ -322,12 +322,22 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); 
+  opacity: 0; /* Start hidden */
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.background-popup.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .popup {
@@ -370,7 +380,6 @@ fill: #999;
   transition: fill 0.3s ease;
 }
 
-
 .close-button {
   cursor: pointer;
   background-color: transparent;
@@ -379,6 +388,8 @@ fill: #999;
   border: none;
   padding: 6px 8px;
   border-radius: 8px;
+  margin-top: -30px;
+  margin-right: -5px;
 }
 
 .close-button:hover {

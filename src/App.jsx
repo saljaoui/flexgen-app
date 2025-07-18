@@ -14,12 +14,13 @@ function App() {
     localStorage.setItem('selectedLayout', layoutId);
   };
 
-  const handleClosePopup = () => {
-    const popup = document.querySelector('.background-popup');
-    if (popup) {
-      popup.style.display = 'none';
-    }
-  };
+
+const handleClosePopup = () => {
+  const popup = document.querySelector('.background-popup');
+  if (popup) {
+    popup.classList.remove('show');
+  }
+};
 
   return (
     <div className='app'>
