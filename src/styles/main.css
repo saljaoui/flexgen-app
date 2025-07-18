@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -7,7 +8,9 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -169,7 +172,7 @@ html, body {
 }
 
 .sidebar-content {
-  margin: 20px 0 20px  20px;
+  margin: 20px 0 20px 20px;
   padding: 20px;
   border: 1px solid #2c2c2c;
   border-radius: 8px;
@@ -183,100 +186,100 @@ html, body {
 
 
 .title {
-    font-size: 18px;
-    font-weight: 500;
-    color: #D0D0D0;
-    margin: 0 0 16px 0;
-    padding-bottom: 8px;
-    text-align: center;
-    border-bottom: 1px solid #333;
+  font-size: 18px;
+  font-weight: 500;
+  color: #D0D0D0;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  text-align: center;
+  border-bottom: 1px solid #333;
 }
 
 .sidebar-content-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .layout-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
-    background-color: #1E1E1E;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  background-color: #1E1E1E;
 }
 
 .layout-item:hover {
-    background-color: #292929;
-    border-color: #444;
-    transform: translateX(4px);
+  background-color: #292929;
+  border-color: #444;
+  transform: translateX(4px);
 }
 
 .layout-item.active {
-    background-color: #353535;
-    border-color: #555;
-    color: #FFFFFF;
+  background-color: #353535;
+  border-color: #555;
+  color: #FFFFFF;
 }
 
 .layout-icon {
-    width: 32px;
-    height: 32px;
-    flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
 }
 
 .layout-icon svg {
-    width: 100%;
-    height: 100%;
-    fill: #888;
-    transition: fill 0.2s ease;
+  width: 100%;
+  height: 100%;
+  fill: #888;
+  transition: fill 0.2s ease;
 }
 
 .layout-item:hover .layout-icon svg {
-    fill: #E0E0E0;
+  fill: #E0E0E0;
 }
 
 .layout-item.active .layout-icon svg {
-    fill: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .layout-name {
-    font-size: 15px;
-    font-weight: 600;
-    color: #C0C0C0;
-    transition: color 0.2s ease;
+  font-size: 15px;
+  font-weight: 600;
+  color: #C0C0C0;
+  transition: color 0.2s ease;
 }
 
 .layout-item:hover .layout-name {
-    color: #F0F0F0;
+  color: #F0F0F0;
 }
 
 .layout-item.active .layout-name {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .layout-description {
-    font-size: 13px;
-    color: #999;
-    margin-top: 2px;
-    transition: color 0.2s ease;
+  font-size: 13px;
+  color: #999;
+  margin-top: 2px;
+  transition: color 0.2s ease;
 }
 
 .layout-item:hover .layout-description {
-    color: #CCCCCC;
+  color: #CCCCCC;
 }
 
 .layout-item.active .layout-description {
-    color: #DDDDDD;
+  color: #DDDDDD;
 }
 
 .layout-info {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .sidebar-content::-webkit-scrollbar {
@@ -291,17 +294,6 @@ html, body {
 .sidebar-content::-webkit-scrollbar-track {
   background-color: #181818;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .item {
   background-color: #2b2b2b;
@@ -325,7 +317,8 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0; /* Start hidden */
+  opacity: 0;
+  /* Start hidden */
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
@@ -366,9 +359,11 @@ html, body {
   line-height: 1.6;
   color: #cccccc;
 }
+
 .popup a {
   color: #ffffff;
 }
+
 .popup-header {
   display: flex;
   justify-content: space-between;
@@ -377,7 +372,7 @@ html, body {
 }
 
 .close-button svg {
-fill: #999;
+  fill: #999;
   width: 20px;
   height: 20px;
   transition: fill 0.3s ease;
@@ -397,11 +392,11 @@ fill: #999;
 
 .close-button:hover {
   background-color: #333;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .close-button:hover svg {
- fill: #fff;
+  fill: #fff;
 }
 
 .container {
