@@ -318,7 +318,8 @@ html, body {
   letter-spacing: 0.5px;
 }
 
-.background-popup {
+.background-popup,
+.background-popup-code {
   position: absolute;
   top: 0;
   left: 0;
@@ -336,7 +337,8 @@ html, body {
   pointer-events: none;
 }
 
-.background-popup.show {
+.background-popup.show,
+.background-popup-code.show {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;

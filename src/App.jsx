@@ -4,6 +4,7 @@ import Topbar from './components/Topbar.jsx';
 import SidebarContentList from './components/SidebarContentList.jsx';
 import CodeDisplay from './components/CodeDisplay.jsx';
 import PopupInfo from './components/PopupInfo.jsx';
+import PopupCode from './components/PopupCode.jsx';
 
 function App() {
   const [selectedLayout, setSelectedLayout] = useState(() => {
@@ -30,6 +31,7 @@ function App() {
         <CodeDisplay selectedLayout={selectedLayout} />
       </div>
       <PopupInfo />
+      <PopupCode selectedLayout={selectedLayout} />
     </div>
   );
 }
