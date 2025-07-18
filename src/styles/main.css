@@ -309,13 +309,18 @@ html, body {
   border: 2px solid #000;
   color: #e0e0e0;
   box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.7);
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
+
 
 .container {
   height: 100%;
   width: 100%;
   opacity: 1;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .container.fade-out {

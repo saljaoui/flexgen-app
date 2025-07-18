@@ -372,23 +372,5 @@ export const layouts = [
   <div class="item">2</div>
     <div class="item">3</div>
       `
-    },
-     {
-      id: ' ',
-      css: `
-
-      `,
-      html: `
-
-      `
-    },
-     {
-      id: ' ',
-      css: `
-
-      `,
-      html: `
-
-      `
-    },  
+    }
   ];
