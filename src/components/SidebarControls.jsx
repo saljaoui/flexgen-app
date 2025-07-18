@@ -1,8 +1,10 @@
 
 function SidebarControls() {
   const handleButtonInfo = () => {
-
-    
+     const popup = document.querySelector('.background-popup');
+      if (popup) {
+        popup.style.display = 'flex';
+      }
   }
 
   return (
