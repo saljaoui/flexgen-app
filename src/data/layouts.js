@@ -6,11 +6,6 @@ export const layouts = [
           display: flex;
           gap: 2%;
           flex-direction: column;
-          opacity: 1;
-          transition: opacity 0.4s ease-in-out;
-        }
-        .container.fade-out {
-          opacity: 0;
         }
         .item:nth-child(1),
         .item:nth-child(3) {
@@ -33,8 +28,6 @@ export const layouts = [
         .container {
           display: flex;
           gap: 2%;
-          opacity: 1;
-          transition: opacity 0.4s ease-in-out;
         }
         .item:nth-child(1) {
           width: 25%;
@@ -58,11 +51,6 @@ export const layouts = [
           gap: 2%;
           flex-wrap: wrap;
           align-content: start;
-          opacity: 1;
-          transition: opacity 0.4s ease-in-out;
-        }
-        .container.fade-out {
-          opacity: 0;
         }
         .item:nth-child(1),
         .item:nth-child(4) {
@@ -71,11 +59,11 @@ export const layouts = [
         }
         .item:nth-child(2) {
           width: 25%;
-          height: 80%;
+          height: 75%;
         }
         .item:nth-child(3) {
           flex-grow: 1;
-          height: 80%;
+          height: 75%;
         }
       `,
       html: `
@@ -93,11 +81,6 @@ export const layouts = [
           gap: 2%;
           flex-wrap: wrap;
           align-content: start;
-          opacity: 1;
-          transition: opacity 0.4s ease-in-out;
-        }
-        .container.fade-out {
-          opacity: 0;
         }
         .item:nth-child(1),
         .item:nth-child(5) {
@@ -107,11 +90,11 @@ export const layouts = [
         .item:nth-child(2),
         .item:nth-child(4) {
           width: 25%;
-          height: 80%;
+          height: 75%;
         }
         .item:nth-child(3) {
           flex-grow: 1;
-          height: 80%;
+          height: 75%;
         }
       `,
       html: `
@@ -284,6 +267,113 @@ export const layouts = [
       `
     },
     {
+      id: 'three-column',
+      css: `
+.container {
+  display: flex;
+  gap: 10px;
+}
+  .item {
+  flex: 1;
+  }
+      `,
+      html: `
+ <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+      `
+    },
+ {
+      id: 'three-row',
+      css: `
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+  .item {
+  flex: 1;
+  }
+      `,
+      html: `
+ <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+      `
+    },
+     {
+      id: 'hero-section',
+      css: `
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+  .item {
+  flex: 1;
+  }
+      `,
+      html: `
+ <div class="item">1</div>
+  <div class="item">2</div>
+      `
+    },
+     {
+      id: 'dashboard',
+      css: `
+      .container {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          align-content: start;
+        }
+        .item:nth-child(1) {
+          width: 100%;
+          height: 10%;
+        }
+        .item:nth-child(2) {
+          width: 25%;
+          height: 85%;
+        }
+        .item:nth-child(3) {
+          flex-grow: 1;
+        }
+      `,
+      html: `
+ <div class="item">1</div>
+  <div class="item">2</div>
+    <div class="item">3</div>
+      `
+    },
+     {
+      id: 'magazine',
+      css: `
+      .container {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          align-content: start;
+        }
+        .item:nth-child(1) {
+          width: 100%;
+          height: 15%;
+        }
+        .item:nth-child(2) {
+          height: 80%;
+          flex-grow: 1;
+        }
+        .item:nth-child(3) {
+          width: 30%;
+          height: 80%;
+        }
+      `,
+      html: `
+ <div class="item">1</div>
+  <div class="item">2</div>
+    <div class="item">3</div>
+      `
+    },
+     {
       id: ' ',
       css: `
 
@@ -292,6 +382,13 @@ export const layouts = [
 
       `
     },
+     {
+      id: ' ',
+      css: `
 
-    
+      `,
+      html: `
+
+      `
+    },  
   ];

@@ -73,15 +73,6 @@ function SidebarContentList({ selectedLayout, onLayoutChange }) {
       <path d="M57 10a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM122 10a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H83a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM187 10a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM252 10a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM57 75a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V83a8 8 0 0 1 8-8zM122 75a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H83a8 8 0 0 1-8-8V83a8 8 0 0 1 8-8zM187 75a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8V83a8 8 0 0 1 8-8zM252 75a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8V83a8 8 0 0 1 8-8zM57 140a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM122 140a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H83a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM187 140a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM252 140a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM57 205a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM122 205a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8H83a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM187 205a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8zM252 205a8 8 0 0 1 8 8v39a8 8 0 0 1-8 8h-39a8 8 0 0 1-8-8v-39a8 8 0 0 1 8-8z" clip-path="url(#grid4x4_svg__b)"></path>
     </svg>`
   },
-  {
-  id: 'two-column-header',
-  name: 'Two Column + Header',
-  desc: 'Header, left sidebar, and main content',
-  svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
-    <rect></rect>
-    <path d="M252 10a8 8 0 0 1 8 8v30a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM78 58a8 8 0 0 1 8 8v186a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V66a8 8 0 0 1 8-8zM252 58a8 8 0 0 1 8 8v186a8 8 0 0 1-8 8H98a8 8 0 0 1-8-8V66a8 8 0 0 1 8-8z"></path>
-  </svg>`
-},
 {
   id: 'three-column',
   name: 'Three Columns',
@@ -92,21 +83,39 @@ function SidebarContentList({ selectedLayout, onLayoutChange }) {
   </svg>`
 },
 {
-  id: 'header-two-cols',
-  name: 'Header + Two Columns',
-  desc: 'Header and two side-by-side sections',
+  id: 'three-row',
+  name: 'Three Rows',
+  desc: 'Header, body, footer',
   svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
     <rect></rect>
-    <path d="M18 10h234v40H18zM18 66h111v194H18zM135 66h117v194H135z"></path>
+    <path d="M10 18h250v66H10zM10 102h250v66H10zM10 186h250v66H10z"></path>
   </svg>`
 },
 {
-  id: 'footer',
-  name: 'Footer Only',
-  desc: 'Main content and footer',
+  id: 'hero-section',
+  name: 'Hero Section',
+  desc: 'Large hero, content below',
   svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
     <rect></rect>
-    <path d="M18 10h234v200H18zM18 222h234v38H18z"></path>
+    <path d="M252 10a8 8 0 0 1 8 8v94a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM252 130a8 8 0 0 1 8 8v114a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V138a8 8 0 0 1 8-8z"></path>
+  </svg>`
+},
+{
+  id: 'dashboard',
+  name: 'Dashboard',
+  desc: 'Top nav, sidebar, main area',
+  svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
+    <rect></rect>
+    <path d="M252 10a8 8 0 0 1 8 8v24a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM62 60a8 8 0 0 1 8 8v184a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V68a8 8 0 0 1 8-8zM252 60a8 8 0 0 1 8 8v184a8 8 0 0 1-8 8H88a8 8 0 0 1-8-8V68a8 8 0 0 1 8-8z"></path>
+  </svg>`
+},
+{
+  id: 'magazine',
+  name: 'Magazine',
+  desc: 'Article layout with sidebar',
+  svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 270 270">
+    <rect></rect>
+    <path d="M252 10a8 8 0 0 1 8 8v44a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8zM172 80a8 8 0 0 1 8 8v164a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8V88a8 8 0 0 1 8-8zM252 80a8 8 0 0 1 8 8v164a8 8 0 0 1-8 8h-54a8 8 0 0 1-8-8V88a8 8 0 0 1 8-8z"></path>
   </svg>`
 }
 ];
