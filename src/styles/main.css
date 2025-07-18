@@ -488,3 +488,7 @@ body {
   min-width: 400px;
   transition: all 0.3s ease;
 }
+
+pre {
+  margin: 0;
+}

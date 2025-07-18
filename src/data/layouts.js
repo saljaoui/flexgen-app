@@ -18,8 +18,7 @@ export const layouts = [
   height: 80%;
 }
       `,
-    html: `
-<div class="item">Header</div>
+    html: `<div class="item">Header</div>
 <div class="item">Content</div>
 <div class="item">Footer</div>
       `,
@@ -31,17 +30,18 @@ export const layouts = [
   display: flex;
   gap: 2%;
 }
+
 .item:nth-child(1) {
   width: 25%;
   height: 100%;
 }
+
 .item:nth-child(2) {
   height: 100%;
   width: 75%;
 }
       `,
-    html: `
-<div class="item">Sidebar</div>
+    html: `<div class="item">Sidebar</div>
 <div class="item">Content</div>
       `,
   },
@@ -54,22 +54,24 @@ export const layouts = [
   flex-wrap: wrap;
   align-content: start;
 }
+
 .item:nth-child(1),
 .item:nth-child(4) {
   width: 100%;
   height: 10%;
 }
+
 .item:nth-child(2) {
   width: 25%;
   height: 75%;
 }
+
 .item:nth-child(3) {
   flex-grow: 1;
   height: 75%;
 }
       `,
-    html: `
-<div class="item">Header</div>
+    html: `<div class="item">Header</div>
 <div class="item">Sidebar</div>
 <div class="item">Content</div>
 <div class="item">Footer</div>
@@ -84,23 +86,25 @@ export const layouts = [
   flex-wrap: wrap;
   align-content: start;
 }
+
 .item:nth-child(1),
 .item:nth-child(5) {
   width: 100%;
   height: 10%;
 }
+
 .item:nth-child(2),
 .item:nth-child(4) {
   width: 25%;
   height: 75%;
 }
+
 .item:nth-child(3) {
   flex-grow: 1;
   height: 75%;
 }
       `,
-    html: `
-<div class="item">Header</div>
+    html: `<div class="item">Header</div>
 <div class="item">Sidebar</div>
 <div class="item">Content</div>
 <div class="item">Sidebar</div>
@@ -141,14 +145,12 @@ export const layouts = [
   grid-row: 3 / 4;
 }
       `,
-    html: `
-  <div class="item">Header</div>
-  <div class="item">Sidebar</div>
-  <div class="item">Navigation</div>
-  <div class="item">Ads</div>
-  <div class="item">Main</div>
-  <div class="item">Footer</div>
-      `,
+    html: `<div class="item">Header</div>
+<div class="item">Sidebar</div>
+<div class="item">Navigation</div>
+<div class="item">Ads</div>
+<div class="item">Main</div>
+<div class="item">Footer</div>`,
   },
   {
     id: "Collage",
@@ -205,39 +207,34 @@ export const layouts = [
   grid-column: 1 / 2;
 }
       `,
-    html: `
-  <div class="item">1</div>
-  <div class="item">2</div>
-  <div class="item">3</div>
-  <div class="item">4</div>
-  <div class="item">5</div>
-  <div class="item">6</div>
-  <div class="item">7</div>
-  <div class="item">8</div>
-  <div class="item">9</div>
-      `,
+    html: `<div class="item">1</div>
+<div class="item">2</div>
+<div class="item">3</div>
+<div class="item">4</div>
+<div class="item">5</div>
+<div class="item">6</div>
+<div class="item">7</div>
+<div class="item">8</div>
+<div class="item">9</div>
+`,
   },
   {
     id: "3x3-Grid",
-    css: `
-.container {
+    css: `.container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px 10px;
-}
-      `,
-    html: `
-  <div class="item">1</div>
-  <div class="item">2</div>
-  <div class="item">3</div>
-  <div class="item">4</div>
-  <div class="item">5</div>
-  <div class="item">6</div>
-  <div class="item">7</div>
-  <div class="item">8</div>
-  <div class="item">9</div>
-      `,
+}`,
+    html: `<div class="item">1</div>
+<div class="item">2</div>
+<div class="item">3</div>
+<div class="item">4</div>
+<div class="item">5</div>
+<div class="item">6</div>
+<div class="item">7</div>
+<div class="item">8</div>
+<div class="item">9</div>`,
   },
   {
     id: "4x4-Grid",
