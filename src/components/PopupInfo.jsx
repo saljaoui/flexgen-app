@@ -8,7 +8,7 @@ const handleClosePopup = () => {
 };
 
     return (
-            <div className='background-popup'>
+    <div className='background-popup'>
         <div className='popup' >
           <div className='popup-header'>
             <h2>About FlexLayout</h2>
