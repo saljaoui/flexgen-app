@@ -56,13 +56,15 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-height: 100vh;
   position: relative;
 }
 
 .content-main {
   flex: 1;
   display: flex;
-  height: 100%;
+  /* height: 100%; */
+  height: 80vh;
 }
 
 .sidebar-controls button {
@@ -175,7 +177,7 @@ html, body {
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
-  height: 85vh;
+  /* height: 85vh; */
   overflow-y: scroll;
 }
 

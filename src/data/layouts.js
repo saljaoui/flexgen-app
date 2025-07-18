@@ -1,7 +1,7 @@
 export const layouts = [
-    {
-      id: 'pancake',
-      css: `
+  {
+    id: "pancake",
+    css: `
         .container {
           display: flex;
           gap: 2%;
@@ -16,15 +16,15 @@ export const layouts = [
           height: 80%;
         }
       `,
-      html: `
+    html: `
         <div class="item">Header</div>
         <div class="item">Content</div>
         <div class="item">Footer</div>
       `,
-    },
-    {
-      id: 'sidebar',
-      css: `
+  },
+  {
+    id: "sidebar",
+    css: `
         .container {
           display: flex;
           gap: 2%;
@@ -38,14 +38,14 @@ export const layouts = [
           width: 75%;
         }
       `,
-      html: `
+    html: `
         <div class="item">Sidebar</div>
         <div class="item">Content</div>
       `,
-    },
-    {
-      id: 'html5',
-      css: `
+  },
+  {
+    id: "html5",
+    css: `
         .container {
           display: flex;
           gap: 2%;
@@ -66,16 +66,16 @@ export const layouts = [
           height: 75%;
         }
       `,
-      html: `
+    html: `
         <div class="item">Header</div>
         <div class="item">Sidebar</div>
         <div class="item">Content</div>
         <div class="item">Footer</div>
       `,
-    },
-    {
-      id: 'html5-2',
-      css: `
+  },
+  {
+    id: "html5-2",
+    css: `
         .container {
           display: flex;
           gap: 2%;
@@ -97,17 +97,17 @@ export const layouts = [
           height: 75%;
         }
       `,
-      html: `
+    html: `
         <div class="item">Header</div>
         <div class="item">Sidebar</div>
         <div class="item">Content</div>
         <div class="item">Sidebar</div>
         <div class="item">Footer</div>
-      `
-    },
-    {
-      id: '12-Column-System',
-      css: `
+      `,
+  },
+  {
+    id: "12-Column-System",
+    css: `
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -139,18 +139,18 @@ export const layouts = [
   grid-row: 3 / 4;
 }
       `,
-      html: `
+    html: `
   <div class="item">Header</div>
   <div class="item">Sidebar</div>
   <div class="item">Navigation</div>
   <div class="item">Ads</div>
   <div class="item">Main</div>
   <div class="item">Footer</div>
-      `
-    },
-        {
-      id: 'Collage',
-      css: `
+      `,
+  },
+  {
+    id: "Collage",
+    css: `
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -203,7 +203,7 @@ export const layouts = [
   grid-column: 1 / 2;
 }
       `,
-      html: `
+    html: `
   <div class="item">1</div>
   <div class="item">2</div>
   <div class="item">3</div>
@@ -213,11 +213,11 @@ export const layouts = [
   <div class="item">7</div>
   <div class="item">8</div>
   <div class="item">9</div>
-      `
-    },
-            {
-      id: '3x3-Grid',
-      css: `
+      `,
+  },
+  {
+    id: "3x3-Grid",
+    css: `
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -225,7 +225,7 @@ export const layouts = [
   gap: 10px 10px;
 }
       `,
-      html: `
+    html: `
   <div class="item">1</div>
   <div class="item">2</div>
   <div class="item">3</div>
@@ -235,11 +235,11 @@ export const layouts = [
   <div class="item">7</div>
   <div class="item">8</div>
   <div class="item">9</div>
-      `
-    },
-    {
-      id: '4x4-Grid',
-      css: `
+      `,
+  },
+  {
+    id: "4x4-Grid",
+    css: `
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -247,7 +247,7 @@ export const layouts = [
   gap: 10px 10px;
 }
       `,
-      html: `
+    html: `
   <div class="item">1</div>
   <div class="item">2</div>
   <div class="item">3</div>
@@ -264,11 +264,11 @@ export const layouts = [
   <div class="item">14</div>
   <div class="item">15</div>
   <div class="item">16</div>
-      `
-    },
-    {
-      id: 'three-column',
-      css: `
+      `,
+  },
+  {
+    id: "three-column",
+    css: `
 .container {
   display: flex;
   gap: 10px;
@@ -277,15 +277,15 @@ export const layouts = [
   flex: 1;
   }
       `,
-      html: `
+    html: `
  <div class="item">1</div>
   <div class="item">2</div>
   <div class="item">3</div>
-      `
-    },
- {
-      id: 'three-row',
-      css: `
+      `,
+  },
+  {
+    id: "three-row",
+    css: `
 .container {
   display: flex;
   flex-direction: column;
@@ -295,15 +295,15 @@ export const layouts = [
   flex: 1;
   }
       `,
-      html: `
+    html: `
  <div class="item">1</div>
   <div class="item">2</div>
   <div class="item">3</div>
-      `
-    },
-     {
-      id: 'hero-section',
-      css: `
+      `,
+  },
+  {
+    id: "hero-section",
+    css: `
 .container {
   display: flex;
   flex-direction: column;
@@ -313,14 +313,14 @@ export const layouts = [
   flex: 1;
   }
       `,
-      html: `
+    html: `
  <div class="item">1</div>
   <div class="item">2</div>
-      `
-    },
-     {
-      id: 'dashboard',
-      css: `
+      `,
+  },
+  {
+    id: "dashboard",
+    css: `
       .container {
           display: flex;
           gap: 10px;
@@ -339,15 +339,15 @@ export const layouts = [
           flex-grow: 1;
         }
       `,
-      html: `
+    html: `
  <div class="item">1</div>
   <div class="item">2</div>
     <div class="item">3</div>
-      `
-    },
-     {
-      id: 'magazine',
-      css: `
+      `,
+  },
+  {
+    id: "magazine",
+    css: `
       .container {
           display: flex;
           gap: 10px;
@@ -367,10 +367,10 @@ export const layouts = [
           height: 80%;
         }
       `,
-      html: `
+    html: `
  <div class="item">1</div>
   <div class="item">2</div>
     <div class="item">3</div>
-      `
-    }
-  ];
+      `,
+  },
+];
