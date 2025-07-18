@@ -320,7 +320,7 @@ body {
   opacity: 0;
   /* Start hidden */
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2px);
   z-index: 100;
   display: flex;
