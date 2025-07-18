@@ -2,107 +2,109 @@ export const layouts = [
   {
     id: "pancake",
     css: `
-        .container {
-          display: flex;
-          gap: 2%;
-          flex-direction: column;
-        }
-        .item:nth-child(1),
-        .item:nth-child(3) {
-          width: 100%;
-          height: 10%;
-        }
-        .item:nth-child(2) {
-          height: 80%;
-        }
+.container {
+  display: flex;
+  gap: 2%;
+  flex-direction: column;
+}
+
+.item:nth-child(1),
+.item:nth-child(3) {
+  width: 100%;
+  height: 10%;
+}
+
+.item:nth-child(2) {
+  height: 80%;
+}
       `,
     html: `
-        <div class="item">Header</div>
-        <div class="item">Content</div>
-        <div class="item">Footer</div>
+<div class="item">Header</div>
+<div class="item">Content</div>
+<div class="item">Footer</div>
       `,
   },
   {
     id: "sidebar",
     css: `
-        .container {
-          display: flex;
-          gap: 2%;
-        }
-        .item:nth-child(1) {
-          width: 25%;
-          height: 100%;
-        }
-        .item:nth-child(2) {
-          height: 100%;
-          width: 75%;
-        }
+.container {
+  display: flex;
+  gap: 2%;
+}
+.item:nth-child(1) {
+  width: 25%;
+  height: 100%;
+}
+.item:nth-child(2) {
+  height: 100%;
+  width: 75%;
+}
       `,
     html: `
-        <div class="item">Sidebar</div>
-        <div class="item">Content</div>
+<div class="item">Sidebar</div>
+<div class="item">Content</div>
       `,
   },
   {
     id: "html5",
     css: `
-        .container {
-          display: flex;
-          gap: 2%;
-          flex-wrap: wrap;
-          align-content: start;
-        }
-        .item:nth-child(1),
-        .item:nth-child(4) {
-          width: 100%;
-          height: 10%;
-        }
-        .item:nth-child(2) {
-          width: 25%;
-          height: 75%;
-        }
-        .item:nth-child(3) {
-          flex-grow: 1;
-          height: 75%;
-        }
+.container {
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  align-content: start;
+}
+.item:nth-child(1),
+.item:nth-child(4) {
+  width: 100%;
+  height: 10%;
+}
+.item:nth-child(2) {
+  width: 25%;
+  height: 75%;
+}
+.item:nth-child(3) {
+  flex-grow: 1;
+  height: 75%;
+}
       `,
     html: `
-        <div class="item">Header</div>
-        <div class="item">Sidebar</div>
-        <div class="item">Content</div>
-        <div class="item">Footer</div>
+<div class="item">Header</div>
+<div class="item">Sidebar</div>
+<div class="item">Content</div>
+<div class="item">Footer</div>
       `,
   },
   {
     id: "html5-2",
     css: `
-        .container {
-          display: flex;
-          gap: 2%;
-          flex-wrap: wrap;
-          align-content: start;
-        }
-        .item:nth-child(1),
-        .item:nth-child(5) {
-          width: 100%;
-          height: 10%;
-        }
-        .item:nth-child(2),
-        .item:nth-child(4) {
-          width: 25%;
-          height: 75%;
-        }
-        .item:nth-child(3) {
-          flex-grow: 1;
-          height: 75%;
-        }
+.container {
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  align-content: start;
+}
+.item:nth-child(1),
+.item:nth-child(5) {
+  width: 100%;
+  height: 10%;
+}
+.item:nth-child(2),
+.item:nth-child(4) {
+  width: 25%;
+  height: 75%;
+}
+.item:nth-child(3) {
+  flex-grow: 1;
+  height: 75%;
+}
       `,
     html: `
-        <div class="item">Header</div>
-        <div class="item">Sidebar</div>
-        <div class="item">Content</div>
-        <div class="item">Sidebar</div>
-        <div class="item">Footer</div>
+<div class="item">Header</div>
+<div class="item">Sidebar</div>
+<div class="item">Content</div>
+<div class="item">Sidebar</div>
+<div class="item">Footer</div>
       `,
   },
   {
@@ -322,22 +324,22 @@ export const layouts = [
     id: "dashboard",
     css: `
       .container {
-          display: flex;
-          gap: 10px;
-          flex-wrap: wrap;
-          align-content: start;
-        }
-        .item:nth-child(1) {
-          width: 100%;
-          height: 10%;
-        }
-        .item:nth-child(2) {
-          width: 25%;
-          height: 85%;
-        }
-        .item:nth-child(3) {
-          flex-grow: 1;
-        }
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: start;
+}
+.item:nth-child(1) {
+  width: 100%;
+  height: 10%;
+}
+.item:nth-child(2) {
+  width: 25%;
+  height: 85%;
+}
+.item:nth-child(3) {
+  flex-grow: 1;
+}
       `,
     html: `
  <div class="item">1</div>
@@ -349,23 +351,23 @@ export const layouts = [
     id: "magazine",
     css: `
       .container {
-          display: flex;
-          gap: 10px;
-          flex-wrap: wrap;
-          align-content: start;
-        }
-        .item:nth-child(1) {
-          width: 100%;
-          height: 15%;
-        }
-        .item:nth-child(2) {
-          height: 80%;
-          flex-grow: 1;
-        }
-        .item:nth-child(3) {
-          width: 30%;
-          height: 80%;
-        }
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: start;
+}
+.item:nth-child(1) {
+  width: 100%;
+  height: 15%;
+}
+.item:nth-child(2) {
+  height: 80%;
+  flex-grow: 1;
+}
+.item:nth-child(3) {
+  width: 30%;
+  height: 80%;
+}
       `,
     html: `
  <div class="item">1</div>
