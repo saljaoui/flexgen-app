@@ -8,7 +8,7 @@ function Topbar() {
           <rect x="6" y="13.5" width="6" height="6" rx="1.2" />
           <rect x="13.5" y="13.5" width="6" height="6" rx="1.2" />
         </svg>
-        <h1>Flexgen</h1>
+        <h1>FlexLayout</h1>
 
       </div>
       
