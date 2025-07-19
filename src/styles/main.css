@@ -518,3 +518,7 @@ transform: translateX(-100%);
 pre {
   margin: 0;
 }
+a {
+  /* color: #1e90ff; */
+  text-decoration: none;
+}

@@ -26,7 +26,7 @@ const handleClosePopup = () => {
             No frameworks, no complex setup — just clean code and real layout patterns.
           </p>
           <p>
-            Made with ❤️ by <a href="github.com/salajoui" target="_blank" rel="noopener noreferrer">Saljaoui</a>.
+            Made with ❤️ by <a href="http://github.com/saljaoui" target="_blank" rel="noopener noreferrer">Saljaoui</a>.
           </p>
         </div>
       </div>
