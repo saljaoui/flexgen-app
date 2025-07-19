@@ -121,7 +121,7 @@ function SidebarContentList({ selectedLayout, onLayoutChange }) {
 ];
 
   return (
-    <div className='sidebar-content'>
+    <div className='sidebar-content show'>
       <h2 className='title'>LAYOUTS</h2>
       <div className='sidebar-content-list'>
         {layouts.map((layout) => (

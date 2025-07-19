@@ -66,7 +66,6 @@ body {
 .content-main {
   flex: 1;
   display: flex;
-  /* height: 100%; */
   height: 80vh;
 }
 
@@ -104,6 +103,7 @@ body {
   gap: 3px;
   color: #fff;
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
+  z-index: 5;
 }
 
 .sidebar-controls-headr button {
@@ -114,11 +114,24 @@ body {
   padding: 6px 8px;
   border-radius: 8px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
 .sidebar-controls-headr button:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-controls-headr button.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  /* box-shadow: inset 0 0 0 2px #fff; */
+}
+.sidebar-controls-headr button.active svg {
+  fill: #fff;
+  transition: fill 0.3s ease;
 }
 
 .sidebar-controls-headr {
@@ -172,18 +185,30 @@ body {
 }
 
 .sidebar-content {
-  margin: 20px 0 20px 20px;
-  padding: 20px;
+  margin: 0;
+  /* padding: 20px; */
   border: 1px solid #2c2c2c;
   border-radius: 8px;
   background-color: #181818;
-  width: 300px;
+  max-width: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
-  /* height: 85vh; */
   overflow-y: scroll;
+  /* display: none; */
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+transform: translateX(-100%);
+  z-index: -1;
 }
 
+.sidebar-content.show {
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px 0 20px 20px;
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 1;
+}
 
 .title {
   font-size: 18px;
@@ -282,16 +307,17 @@ body {
   flex: 1;
 }
 
-.sidebar-content::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 4px;
+   height: 4px;
 }
 
-.sidebar-content::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #444;
   border-radius: 4px;
 }
 
-.sidebar-content::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background-color: #181818;
 }
 
@@ -463,8 +489,8 @@ body {
   justify-content: space-between;
   border-radius: 0 8px 8px 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  overflow-x: auto;
-  height: max-content;
+  max-height: 65vh;
+  overflow-x: scroll;
   transition: all 0.3s ease;
 }
 
