@@ -1,12 +1,45 @@
-# React + Vite
+# FlexLayout
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FlexLayout is a simple web tool that helps developers **quickly generate common CSS layouts** using **Flexbox and Grid**.
 
-Currently, two official plugins are available:
+Instead of guessing or rebuilding layouts from scratch, FlexLayout provides **ready-made, responsive layout blocks** that you can instantly copy and use in your projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live demo: https://flexlayout.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Pre-built Flexbox & Grid layouts
+- Common patterns:
+  - 2-column layouts with sidebar
+  - 3-row hero layouts
+  - Card grids
+- Clean, responsive structure
+- Copy-ready HTML & CSS
+- Beginner-friendly and fast to use
+
+---
+
+## 🧠 Use Cases
+
+- Landing pages
+- Portfolios
+- Admin dashboards
+- Web apps & prototypes
+- Learning CSS layouts visually
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- HTML
+- CSS (Flexbox & Grid)
+
+---
+
+## 📌 Status
+
+Active project — built as a practical tool during my learning journey at **Zone01 Oujda**, and maintained as a utility for frontend developers.
